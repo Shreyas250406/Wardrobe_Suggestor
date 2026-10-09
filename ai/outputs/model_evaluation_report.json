@@ -1,0 +1,162 @@
+{
+  "model_architecture": "MobileNetV3-Small (Fine-Tuned)",
+  "train_samples_75_pct": 7500,
+  "test_samples_25_pct": 2500,
+  "target_classes_count": 25,
+  "best_test_top1_accuracy": 86.28,
+  "best_test_top3_accuracy": 98.28,
+  "training_time_seconds": 1252.0,
+  "epochs": 3,
+  "batch_size": 48,
+  "per_class_test_accuracy": {
+    "Tshirts": {
+      "accuracy": 84.4,
+      "test_samples": 135
+    },
+    "Shirts": {
+      "accuracy": 94.2,
+      "test_samples": 139
+    },
+    "Tops": {
+      "accuracy": 87.0,
+      "test_samples": 131
+    },
+    "Kurtas": {
+      "accuracy": 95.2,
+      "test_samples": 125
+    },
+    "Jeans": {
+      "accuracy": 93.2,
+      "test_samples": 88
+    },
+    "Trousers": {
+      "accuracy": 93.1,
+      "test_samples": 72
+    },
+    "Shorts": {
+      "accuracy": 93.8,
+      "test_samples": 64
+    },
+    "Sweaters": {
+      "accuracy": 71.8,
+      "test_samples": 39
+    },
+    "Jackets": {
+      "accuracy": 52.8,
+      "test_samples": 36
+    },
+    "Sweatshirts": {
+      "accuracy": 85.0,
+      "test_samples": 40
+    },
+    "Casual Shoes": {
+      "accuracy": 72.2,
+      "test_samples": 126
+    },
+    "Sports Shoes": {
+      "accuracy": 95.2,
+      "test_samples": 125
+    },
+    "Formal Shoes": {
+      "accuracy": 66.0,
+      "test_samples": 94
+    },
+    "Heels": {
+      "accuracy": 87.3,
+      "test_samples": 142
+    },
+    "Flats": {
+      "accuracy": 16.4,
+      "test_samples": 67
+    },
+    "Sandals": {
+      "accuracy": 81.4,
+      "test_samples": 113
+    },
+    "Flip Flops": {
+      "accuracy": 83.8,
+      "test_samples": 99
+    },
+    "Watches": {
+      "accuracy": 100.0,
+      "test_samples": 122
+    },
+    "Sunglasses": {
+      "accuracy": 100.0,
+      "test_samples": 124
+    },
+    "Handbags": {
+      "accuracy": 80.5,
+      "test_samples": 133
+    },
+    "Backpacks": {
+      "accuracy": 99.0,
+      "test_samples": 105
+    },
+    "Wallets": {
+      "accuracy": 94.9,
+      "test_samples": 117
+    },
+    "Belts": {
+      "accuracy": 100.0,
+      "test_samples": 114
+    },
+    "Socks": {
+      "accuracy": 98.8,
+      "test_samples": 85
+    },
+    "Dresses": {
+      "accuracy": 63.1,
+      "test_samples": 65
+    }
+  },
+  "classes": [
+    "Tshirts",
+    "Shirts",
+    "Tops",
+    "Kurtas",
+    "Jeans",
+    "Trousers",
+    "Shorts",
+    "Sweaters",
+    "Jackets",
+    "Sweatshirts",
+    "Casual Shoes",
+    "Sports Shoes",
+    "Formal Shoes",
+    "Heels",
+    "Flats",
+    "Sandals",
+    "Flip Flops",
+    "Watches",
+    "Sunglasses",
+    "Handbags",
+    "Backpacks",
+    "Wallets",
+    "Belts",
+    "Socks",
+    "Dresses"
+  ],
+  "history": {
+    "train_loss": [
+      0.7888,
+      0.3736,
+      0.2871
+    ],
+    "test_loss": [
+      0.566,
+      0.4572,
+      0.4212
+    ],
+    "test_top1_acc": [
+      81.68,
+      84.4,
+      86.28
+    ],
+    "test_top3_acc": [
+      96.0,
+      98.08,
+      98.28
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "s3_bucket": {
+    "bucket_name": "wardrobe-user-clothes",
+    "region": "us-east-1",
+    "access": "public-read",
+    "versioning": "Enabled",
+    "cors_rules": [
+      {
+        "AllowedHeaders": ["*"],
+        "AllowedMethods": ["GET", "PUT", "POST", "HEAD"],
+        "AllowedOrigins": [
+          "http://localhost:3000",
+          "https://*.supabase.co",
+          "https://your-domain.com"
+        ],
+        "ExposeHeaders": ["ETag"],
+        "MaxAgeSeconds": 3600
+      }
+    ],
+    "directory_structure": {
+      "raw_uploads": "users/{user_id}/clothes/{cloth_id}/raw.{jpg|png|webp}",
+      "sam2_cropped": "users/{user_id}/clothes/{cloth_id}/cropped.webp",
+      "thumbnails": "users/{user_id}/clothes/{cloth_id}/thumb.webp"
+    },
+    "metadata_headers": {
+      "x-amz-meta-user-id": "{user_id}",
+      "x-amz-meta-cloth-id": "{cloth_id}",
+      "x-amz-meta-article-type": "{articleType}"
+    }
+  }
+}
